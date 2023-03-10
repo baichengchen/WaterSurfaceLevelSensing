@@ -15,3 +15,9 @@ How to use:
 3. The speaker under water will generate waves on the water surface.
 
 The radar's resulting amplitude will be higher in variance as shown in the given test.ipynb file using sample data data13.npz
+
+## Encode Data
+You can use the `encode_as_sound.py` script to encode binary data as pulses of sound and silence like so
+
+    python encode_as_sound.py 1101 --freq 100 --duration 1
+This will create `data.wav` file in the current working directory. The `freq` and `duration` arguments are optional. Use `python encode_as_sound.py --help` to see more details.
